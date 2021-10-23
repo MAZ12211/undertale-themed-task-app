@@ -1,3 +1,4 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/99a3ed7b-8c44-4057-927f-0e37de428484/deploy-status)](https://app.netlify.com/sites/silly-tereshkova-f5238e/deploys)
 # undertale-themed-task-app
 It's what you expect. A task app.
 
