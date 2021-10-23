@@ -1,0 +1,159 @@
+* {
+  margin: 10px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-wrap: break-word;
+  font-family: '8bitoperator Regular';
+}
+
+body {
+  background: black;
+}
+
+/* @font-face kit by Fonts2u (https://fonts2u.com) */
+@font-face {
+  font-family: "8bitoperator Regular";
+  src: url("8bitoperator.eot?") format("eot"), url("8bitoperator.woff") format("woff"), url("8bitoperator.ttf") format("truetype"), url("8bitoperator.svg#8bitoperatorRegular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.splash {
+  font-family: '8bitoperator Regular';
+  color: white;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  height: 100vh;
+  text-align: center;
+  line-height: 90vh;
+  z-index: 200;
+}
+
+.splash.display-none {
+  color: white;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: black;
+  height: 100vh;
+  text-align: center;
+  line-height: 90vh;
+  z-index: -10;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+@-webkit-keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  opacity: 0;
+  -webkit-animation: fadeIn 1s ease-in forwards;
+          animation: fadeIn 1s ease-in forwards;
+}
+
+#page-wrapper {
+  border: 2px solid white;
+  padding: 0 0px;
+  background: black;
+  margin: 0 60px;
+}
+
+#in-page-wrapper {
+  color: white;
+}
+
+img {
+  margin: auto 5px;
+}
+
+#btn-el {
+  background: black;
+  border: 2px solid white;
+  color: white;
+  padding: 5px 20px;
+}
+
+#btn-el:focus, #btn-el:hover {
+  color: yellow;
+  border-color: yellow;
+}
+
+#input-el {
+  color: white;
+  background: black;
+  border: 2px solid white;
+  max-width: 500px;
+  max-height: 200px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0.2em 0.5em;
+}
+
+ul li {
+  cursor: pointer;
+  border: 2px solid;
+  font-size: 22px;
+  list-style-type: none;
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+ul li::before {
+  content: '';
+  margin-left: 5px;
+}
+
+ul li.checked {
+  border: 2px solid yellow;
+  color: yellow;
+}
+
+ul li.checked::before {
+  content: '';
+  margin-left: 5px;
+}
+
+.close {
+  color: white;
+  font-size: 20px;
+  background-color: #f44336;
+  float: right;
+  padding: 0px 20px;
+  margin-top: 2px;
+  margin-right: 0px;
+}
+
+.close:hover {
+  background-color: red;
+}
+
+@media (max-width: 740px) {
+  h1 {
+    font-size: 3em !important;
+  }
+  #page-wrapper {
+    margin: 0 20px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
