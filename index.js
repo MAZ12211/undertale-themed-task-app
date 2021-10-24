@@ -64,3 +64,12 @@ document.addEventListener("DOMContentLoaded", (e) => {
     splash.classList.add("display-none");
   }, 2000);
 });
+
+// Key press event
+const element = document.getElementById("input-el");
+
+element.addEventListener("keypress", (event) => {
+  if (event.key == "Enter") {
+    newElement();
+  }
+});
